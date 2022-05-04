@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+  <link rel="stylesheet" href="index.css">
+  <title>Dashboard</title>
+</head>
+
+<body>
+  <div class="body">
+    <div class="header">
+      <h1>myCrypto</h1>
+    </div>
+    <div class="main">
+      <div class="upper-main">
+        <div class="left">
+          <table class="table">
+            <tbody id="table">
+              <tr class="dashboard-row-header">
+                <th>Fecha</th>
+                <th>Hora</th>
+                <th>From</th>
+                <th>Cantidad</th>
+                <th>To</th>
+                <th>Cantidad</th>
+              </tr>
+            </tbody>
+          </table>
+          <div class="lower-main">
+            <div class="left">
+              <div class="lower-main-block">
+                <label for="from-currency">From:</label>
+                <select id="from-currency-select" name="from-currency" class="form-disabable" disabled>
+                  <option value="BTC">BTC</option>
+                  <option value="EUR">EUR</option>
+                  <option value="ETH">ETH</option>
+                  <option value="BCH">BCH</option>
+                  <option value="BNB">BNB</option>
+                  <option value="SOL">SOL</option>
+                  <option value="LINK">LINK</option>
+                  <option value="LUNA">LUNA</option>
+                  <option value="ATOM">ATOM</option>
+                  <option value="USDT">USDT</option>
+                </select>
+              </div>
+              <div class="left-block">
+                <label for="Q-left">Q:</label>
+                <input id="Q-left" class="form-disabable" disabled/>
+                <button id="calculate">calculate</button>
+              </div>
+            </div>
+            <div class="right">
+              <div class="right-block">
+                <label for="to-currency">To:</label>
+                <select id="to-currency-select" name="to-currency" class="form-disabable" disabled>
+                  <option value="BTC">BTC</option>
+                  <option value="EUR">EUR</option>
+                  <option value="ETH">ETH</option>
+                  <option value="BCH">BCH</option>
+                  <option value="BNB">BNB</option>
+                  <option value="SOL">SOL</option>
+                  <option value="LINK">LINK</option>
+                  <option value="LUNA">LUNA</option>
+                  <option value="ATOM">ATOM</option>
+                  <option value="USDT">USDT</option>
+                </select>
+              </div>
+              <div class="right-block">
+                <label for="Q-right">Q:</label>
+                <input id="Q-right" class="form-disabable" disabled/>
+              </div>
+              <div class="right-block">
+                <label for="PU-right">P.U:</label>
+                <input id="PU-right" class="form-disabable" disabled />
+              </div>
+              <div class="right-block">
+                <button id="clear-transaction" class="form-disabable" disabled>cancelar</button>
+                <button id="add-transaction" class="form-disabable" disabled>OK</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="panel-total">
+            <p class="key">Invertido: </p>
+            <p id="value-invertido" class="value">Value</p>
+          </div>
+          <div class="panel-total">
+            <p class="key">Valor: </p>
+            <p id="value-valor" class="value">Value</p>
+          </div>
+          <div class="panel-total">
+            <p class="key">Resultado: </p>
+            <p id="value-resultado" class="value">Value</p>
+          </div>
+          <div class="button-add">
+            <button id="switch-disabled">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <h1>2022 - Todos los derechos reservados</h1>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
