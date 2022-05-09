@@ -1,11 +1,8 @@
 # CRYPTO
 
-Comenzando 🚀
+Aplicación web para el registro de valores de cryptomonedas. Proyecto final del Bootcamp de Programación con Python de KeepCoding.
 
-_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
-
-Mira **Deployment** para conocer como desplegar el proyecto.
-
+## Comenzando 🚀
 
 ### Pre-requisitos 📋
 
